@@ -11,16 +11,19 @@ html, body {
 
 header {
   padding: 1em 2.04em;
+  background-color: #01579B;
+  overflow: auto;
 }
 
 header > nav {
   float: right;
 }
 
-.top_links {
+.top_links, .top_links:visited {
   text-decoration: none;
   display: inline-block;
   padding: 0 1em;
+  color: white;
 }
 
 main {
@@ -43,12 +46,13 @@ main {
   border: none;
 }
 
-.timeframe.selected {
+.timeframe.selected, .timeframe:hover {
   background-color: #01579B;
   color: white;
 }
 
 table {
+  margin-top: 40px;
   width: 100%;
   text-align: left;
 }
@@ -64,4 +68,8 @@ table {
 
 .schedule tbody tr:nth-child(even) {
   background-color: #EEEEEE;
+}
+
+.schedule tbody tr:hover {
+  background-color: #9E9E9E;
 }
