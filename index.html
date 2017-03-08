@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Laundrio Store Front</title>
+    <link rel="stylesheet" href="./css/leaflet.css" type="text/css" media="all" />
     <link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
   </head>
   <body>
@@ -27,79 +28,47 @@
     </div>
       <!--<div class="controls">-->
         <!--<a class="move" href=""><</a>-->
-        <!--<a class="move" href="">></a>-->
-      <!--</div>-->
+        <!--<a class="move" href="">></a>--> <!--</div>-->
+    <select id="rider_selection" name="">
+      <option class="rider_options" value="">Rider 1</option>
+      <option class="rider_options" value="">Rider 1</option>
+      <option class="rider_options" value="">Rider 1</option>
+      <option class="rider_options" value="">Rider 1</option>
+      <option class="rider_options" value="">Rider 1</option>
+    </select>
     <div class="schedule">
-      <table>
-        <thead>
-          <th class="schedule_header">Customer</th>
-          <th class="schedule_header">Location</th>
-          <th class="schedule_header">Assigned Rider</th>
-        </thead>
-        <tbody>
-          <tr class="schedule_details">
-            <td class="schedule_column">Ian De La Cruz</td>
-            <td class="schedule_column">Quezon City</td>
-            <td class="schedule_column">
-              <select id="" name="">
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-              </select>
-            </td>
+      <div class="map" id="map_div"></div>
+      <div class="rider_route">
+        <table>
+          <tr>
+            <th></th>
+            <th></th>
           </tr>
-          <tr class="schedule_details">
-            <td class="schedule_column">Ian De La Cruz</td>
-            <td class="schedule_column">Quezon City</td>
-            <td class="schedule_column">
-              <select id="" name="">
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-              </select>
-            </td>
+          <tr>
+            <td></td>
+            <td></td>
           </tr>
-          <tr class="schedule_details">
-            <td class="schedule_column">Ian De La Cruz</td>
-            <td class="schedule_column">Quezon City</td>
-            <td class="schedule_column">
-              <select id="" name="">
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-              </select>
-            </td>
+          <tr>
+            <td></td>
+            <td></td>
           </tr>
-          <tr class="schedule_details">
-            <td class="schedule_column">Ian De La Cruz</td>
-            <td class="schedule_column">Quezon City</td>
-            <td class="schedule_column">
-              <select id="" name="">
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-              </select>
-            </td>
+          <tr>
+            <td></td>
+            <td></td>
           </tr>
-          <tr class="schedule_details">
-            <td class="schedule_column">Ian De La Cruz</td>
-            <td class="schedule_column">Quezon City</td>
-            <td class="schedule_column">
-              <select id="" name="">
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-                <option value="">Rider 1</option>
-              </select>
-            </td>
+          <tr>
+            <td></td>
+            <td></td>
           </tr>
-        </tbody>
-      </table>
+          <tr>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
     </div>
     </main>
+    <script src="./js/leaflet.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
   </body>
 </html>

@@ -51,6 +51,10 @@ main {
   color: white;
 }
 
+.rider_route table {
+  width: 20%;
+}
+
 table {
   margin-top: 40px;
   width: 100%;
@@ -72,4 +76,10 @@ table {
 
 .schedule tbody tr:hover {
   background-color: #9E9E9E;
+}
+
+/* Map */
+.map {
+  height: 50vh;
+  width: 60%;
 }
