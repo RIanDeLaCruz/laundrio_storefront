@@ -55,31 +55,40 @@ main {
   width: 20%;
 }
 
-table {
-  margin-top: 40px;
+.schedule {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rider_route {
+  width: 30%;
+}
+
+#routing_table {
   width: 100%;
   text-align: left;
 }
 
-.schedule th {
+#routing_table th {
   background-color: #E0E0E0;
   padding: 1em;
 }
 
-.schedule td {
+#routing_table td {
   padding: 1em;
+  text-align: center;
 }
 
-.schedule tbody tr:nth-child(even) {
+#routing_table tbody tr:nth-child(even) {
   background-color: #EEEEEE;
 }
 
-.schedule tbody tr:hover {
+#routing_table tbody tr:hover {
   background-color: #9E9E9E;
 }
 
 /* Map */
 .map {
-  height: 50vh;
+  height: 60vh;
   width: 60%;
 }
