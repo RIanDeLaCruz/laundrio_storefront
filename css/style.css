@@ -55,6 +55,14 @@ main {
   width: 20%;
 }
 
+.riding_team h4 {
+  display: inline-block;
+}
+
+#riding_selection {
+  display: inline-block;
+}
+
 .schedule {
   display: flex;
   justify-content: space-between;
