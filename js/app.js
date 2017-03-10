@@ -38,6 +38,7 @@ var app = (function() {
     addBtn.addEventListener('click', function handler(evt) {
       appendToRoutingTable(popupDetails)
       this.removeEventListener('click', handler)
+      this.parentNode.parentNode.parentNode.classList.toggle('added')
     })
     return wrapper
   }
@@ -54,10 +55,12 @@ var app = (function() {
 
     removeBtn.addEventListener('click', function() {
       var p = document.querySelector('#'+popupDetails.id)
-      p.addEventListener('click', function handler(evt) {
+      p.querySelector('button').addEventListener('click', function handler(evt) {
         appendToRoutingTable(popupDetails)
         this.removeEventListener('click', handler)
+        this.parentNode.parentNode.parentNode.classList.toggle('added')
       })
+      p.parentNode.parentNode.classList.toggle('added')
       this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode)
     })
 

@@ -73,8 +73,7 @@ main {
 }
 
 #routing_table {
-  width: 100%;
-  text-align: left;
+  width: 100%; text-align: left;
 }
 
 #routing_table th {
@@ -99,4 +98,9 @@ main {
 .map {
   height: 60vh;
   width: 60%;
+}
+
+.added {
+  background-color: #f44336;
+  color: white;
 }
