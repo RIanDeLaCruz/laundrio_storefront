@@ -55,6 +55,7 @@ var app = (function() {
 
     removeBtn.addEventListener('click', function() {
       var p = document.querySelector('#'+popupDetails.id)
+      console.log(p)
       p.querySelector('button').addEventListener('click', function handler(evt) {
         appendToRoutingTable(popupDetails)
         this.removeEventListener('click', handler)
