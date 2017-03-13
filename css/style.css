@@ -104,3 +104,8 @@ main {
   background-color: #f44336;
   color: white;
 }
+
+#print_btn {
+  display: block;
+  margin-top: 2.04em;
+}
