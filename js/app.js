@@ -1,11 +1,23 @@
 var app = (function() {
   var map = L.map('map_div').setView([14.640131,121.0748274], 16)
+  var printBtn = document.querySelector('#print_btn')
+  var printModal = document.querySelector('#print_modal')
+  var closeModal = document.querySelector('#close_modal')
   var init = function() {
     L.tileLayer(
       'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
       }
     ).addTo(map);
+    printBtn.addEventListener('click', function printHandler(evt) {
+      _openModal()
+    })
+    printModal.addEventListener('click', function modalPrint(evt) {
+      _printModal()
+    })
+    closeModal.addEventListener('click', function modalPrint(evt) {
+      _closeModal()
+    })
   }
 
   var addMarkers = function (listOfCoordinates) {
@@ -69,6 +81,24 @@ var app = (function() {
     tableRow.appendChild(detailsCell)
     tableRow.appendChild(actionsCell)
     routingTable.children[1].appendChild(tableRow)
+  }
+
+  var _openModal = function() {
+    var bg = document.querySelector('#modal_bg')
+    bg.classList.add('modal_bg--active')
+    var modal = document.querySelector('#modal')
+    modal.classList.add('modal--active')
+  }
+
+  var _closeModal = function() {
+    var bg = document.querySelector('#modal_bg')
+    bg.classList.remove('modal_bg--active')
+    var modal = document.querySelector('#modal')
+    modal.classList.remove('modal--active')
+  }
+
+  var _printModal = function() {
+    alert('save to pdf, or print action')
   }
 
   return {

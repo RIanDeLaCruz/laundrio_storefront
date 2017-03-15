@@ -104,3 +104,57 @@ main {
   background-color: #f44336;
   color: white;
 }
+
+#print_btn {
+  display: block;
+  margin-top: 2.04em;
+}
+
+/* Modal */
+#modal {
+  display: none;
+}
+
+#modal.modal--active {
+  position: absolute;
+  top: 5vh;
+  left: 10vw;
+  z-index: 10000;
+  display: block;
+  background-color: white;
+  width: 80vw;
+  height: 80vh;
+  padding: 2.04em;
+}
+
+.modal_bg--active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(10,10,10,0.5);
+}
+
+#modal table {
+  width: 100%; text-align: left;
+}
+
+#modal th {
+  background-color: #E0E0E0;
+  padding: 1em;
+}
+
+#modal td {
+  padding: 1em;
+}
+
+#modal tbody tr:nth-child(even) {
+  background-color: #EEEEEE;
+}
+
+#modal tbody tr:hover {
+  background-color: #9E9E9E;
+}
